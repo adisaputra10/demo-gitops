@@ -13,15 +13,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: nginx2
   replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx2
     spec:
       containers:
-      - name: nginx
+      - name: nginx2
         image: twalter/openshift-nginx
         ports:
         - containerPort: 80
